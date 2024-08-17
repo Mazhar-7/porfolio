@@ -1,0 +1,127 @@
+:root {
+  --heading-h1: clamp(2.6rem, 2.2cqi, 2.8rem);
+  --heading-h4: clamp(1.6rem, 2cqi, 2rem);
+  --text-normal: clamp(1.2rem, 1.2cqi, 1.6rem);
+  --border-1: 1px solid rgba(255, 255, 255, 0.1);
+  --border-2: 2px solid rgba(255, 255, 255, 0.1);
+  --border-3: 1px solid var(--yellow-icon);
+  --border-4: 1px solid var(--font-color-blue);
+  --border-5: 1px solid var(--font-color-red);
+  --border-radius: 1rem;
+  --border-radius-circle: 50%;
+  --font-family-p: "DM Sans", sans-serif;
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 500;
+  --font-weight-h4: 400;
+  --bg-secondary: rgba(255, 255, 255, 0.1);
+  --font-color-primary: rgba(255, 255, 255, 0.9);
+  --font-color-blue: hsla(210, 100%, 66%, 1);
+  --font-color-red: hsla(358, 100%, 69%, 1);
+  --font-color-green: hsla(174, 90%, 41%, 1);
+  --yellow-icon: #f0db4f;
+  --red-icon: #cc3200;
+}
+
+.container-techicons {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  position: relative;
+  background-color: transparent;
+  overflow: hidden;
+  border: var(--border-1);
+  border-radius: var(--border-radius);
+  padding: 1rem 0
+}
+.techicons-head{
+  width: 50%;
+  padding: 1rem 0;
+}
+.techicons-wrapper {
+  width: 50%;
+}
+
+.icons {
+  width: 100%;
+  background-color: transparent;
+  padding: 10px;
+}
+.react {
+  width: 25rem;
+  height: 25rem;
+  border-radius: var(--border-radius-circle);
+  border-bottom: var(--border-4);
+  border-right: var(--border-4);
+  color: var(--font-color-blue);
+  background-color: transparent;
+  position: absolute;
+  top: -110%;
+  left: 35%;
+}
+.react i{
+  color: var(--font-color-blue);
+  font-size: var(--heading-h1);
+  position: absolute;
+  top: 65%;
+  right: 40%;
+  animation: rotate 10s infinite linear;
+}
+
+
+.github {
+  width: 35rem;
+  height: 35rem;
+  background-color: transparent;
+  border-radius: var(--border-radius-circle);
+  border-bottom: var(--border-5);
+  border-left: var(--border-5);
+  color: var(--font-color-blue);
+  color: var(--font-color-red);
+  position: absolute;
+  top: -120%;
+  right: -30%;
+}
+.github i {
+  color: var(--font-color-red);
+  font-size: var(--heading-h1);
+  position: absolute;
+  top: 55%;
+  right: 65%;
+  animation: rotate 5s infinite linear;
+}
+
+.javascript {
+  width: 25rem;
+  height: 25rem;
+  border-radius: var(--border-radius-circle);
+  border-top: var(--border-3);
+  border-right: var(--border-3);
+  color: var(--yellow-icon);
+  background-color: transparent;
+  position: absolute;
+  bottom: -110%;
+  right: 18%;
+}
+.javascript i{
+  color: var(--yellow-icon);
+  font-size: var(--heading-h1);
+  position: absolute;
+  left: 30%;
+  bottom: 75%;
+  animation: pulse 1s infinite ease-in-out alternate;
+}
+
+
+/* Rotations */
+@keyframes rotate{
+  from{ transform: rotate(-360deg); }
+  to{ transform: rotate(360deg); }
+}
+
+/* Pulse */
+@keyframes pulse {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+

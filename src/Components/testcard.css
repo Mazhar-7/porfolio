@@ -1,0 +1,74 @@
+:root {
+  --heading-h1: clamp(2.6rem, 2.2cqi, 2.8rem);
+  --heading-h4: clamp(1.6rem, 2cqi, 2rem);
+  --text-normal: clamp(1.2rem, 1.2cqi, 1.6rem);
+  --border-1: 1px solid rgba(255, 255, 255, 0.1);
+  --border-2: 2px solid rgba(255, 255, 255, 0.1);
+  --border-3: 1px solid var(--yellow-icon);
+  --border-4: 1px solid var(--font-color-blue);
+  --border-5: 1px solid var(--font-color-red);
+  --border-radius: 1rem;
+  --border-radius-circle: 50%;
+  --font-family-p: "DM Sans", sans-serif;
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 500;
+  --font-weight-h4: 400;
+  --bg-secondary: rgba(255, 255, 255, 0.1);
+  --font-color-primary: rgba(255, 255, 255, 0.9);
+  --font-color-blue: hsla(210, 100%, 66%, 1);
+  --font-color-red: hsla(358, 100%, 69%, 1);
+  --font-color-green: hsla(174, 90%, 41%, 1);
+  --yellow-icon: #f0db4f;
+  --red-icon: #cc3200;
+}
+
+  
+  
+  
+  
+  
+  .test-snippet-card {
+    width: 100%;
+    background-color: transparent;
+    border: var(--border-1);
+    padding: 5px;
+    border-radius: var(--border-radius);
+  }
+  .snippet-one{
+    width: 60%;
+    background-color: transparent;
+  }
+  
+  .code-header {
+    width: 100%;
+    display: flex;
+    border-radius: 3px;
+    padding: 5px;
+    justify-content: flex-start;
+    gap: 1rem;
+    align-self: center;
+    border-top: var(--border-1);
+    border-right: var(--border-1);
+    border-left: var(--border-1);
+    font-family: var(--font-family-p);
+    font-weight: 300;
+    font-size: clamp(1.6rem, 1.2cqi, 1.8rem);
+   
+  }
+ .code-header-btn{
+  width: 8px;
+  height: 8px;
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius-circle);
+ }
+  
+  .code-body {
+    padding: 5px;
+    border-radius: 3px;
+    border: var(--border-1);
+    background-color: var(--bg-secondary);
+    font-family: var(--font-family-p);
+    color: var(--font-color-primary);
+  }
+  

@@ -1,0 +1,100 @@
+:root {
+  --heading-h1: clamp(2.6rem, 2.2cqi, 2.8rem);
+  --heading-h4: clamp(1.6rem, 2cqi, 2rem);
+  --text-normal: clamp(1.2rem, 1.2cqi, 1.6rem);
+  --border-1: 1px solid rgba(255, 255, 255, 0.1);
+  --border-radius: 1rem;
+  --font-family-p: "DM Sans", sans-serif;
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 500;
+  --font-weight-h4: 400;
+  --bg-secondary: rgba(255, 255, 255, 0.1);
+  --font-color-primary: rgba(255, 255, 255, 0.9);
+  --font-color-blue: hsla( 210, 100%, 66%,1);
+  --font-color-red:hsla(  358, 100%, 69%,1);
+  --font-color-green: hsla(174, 90%, 41%,1);
+}
+
+
+
+
+
+.code-snippet-card {
+  width: 100%;
+  background-color: transparent;
+  border: var(--border-1);
+  padding: 5px;
+  border-radius: var(--border-radius);
+}
+
+.code-header {
+  display: flex;
+  border-radius: 3px;
+  padding: 5px;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-self: center;
+  border-top: var(--border-1);
+  border-right: var(--border-1);
+  border-left: var(--border-1);
+  font-family: var(--font-family-p);
+  font-weight: 300;
+  font-size: clamp(1.6rem, 1.2cqi, 1.8rem);
+ 
+}
+.code-header i {
+  color: blue;
+}
+
+.code-body {
+  width: 100%;
+  padding: 5px;
+  border-radius: 3px;
+  background-color: transparent;
+  border-top: var(--border-1);
+  border-right: var(--border-1);
+  border-left: var(--border-1);
+  border-bottom: var(--border-1);
+  background-color: var(--bg-secondary);
+  font-family: var(--font-family-p);
+}
+
+.code-body pre {
+  background-color: transparent;
+}
+.code-body code {
+    width: 100%;
+    padding: 5px ;
+  background-color: transparent;
+}
+.line {
+  background-color: transparent;
+  font-family: var(--font-family-p);
+  width: 100px;
+  height: 10px;
+  padding: 2px;
+  margin:  5px;
+}
+.line span{
+    font-size: clamp(.75rem, 1cqi, 1.1rem);
+    font-weight: 400;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    text-align: left;
+}
+span {
+  background-color: transparent;
+}
+.blue {
+  color: var(--font-color-blue);
+}
+.red {
+  color: var(--font-color-red);
+}
+.green {
+  color: var(--font-color-green);
+}
+.white{
+    color: var(--font-color-primary);
+}

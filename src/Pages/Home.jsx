@@ -7,7 +7,6 @@ const Home = () => {
   return (
     <>
       <SideBar />
-
       <section id="home">
         <div className="home-container">
           <div className="blink-line"></div>
