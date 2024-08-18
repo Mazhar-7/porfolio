@@ -1,4 +1,6 @@
 :root {
+  --horizontal: calc(77 * 1000px / 1000);
+  --vertical: calc(65 * 1000px / 1000);
   --heading-h1: clamp(2.6rem, 2.2cqi, 2.8rem);
   --heading-h4: clamp(1.6rem, 2cqi, 2rem);
   --text-normal: clamp(1.2rem, 1.2cqi, 1.6rem);
@@ -15,6 +17,11 @@
   --font-weight-h3: 500;
   --font-weight-h4: 400;
   --bg-secondary: rgba(255, 255, 255, 0.1);
+  --ovelay-bg: radial-gradient(
+    farthest-corner at 20% 100%,
+    rgba(0, 0, 0, 0.7) 30%,
+    rgba(0, 0, 0, 0) 50%
+  );
   --font-color-primary: rgba(255, 255, 255, 0.9);
   --font-color-blue: hsla(210, 100%, 66%, 1);
   --font-color-red: hsla(358, 100%, 69%, 1);
@@ -23,52 +30,150 @@
   --red-icon: #cc3200;
 }
 
-  
-  
-  
-  
-  
-  .test-snippet-card {
-    width: 100%;
-    background-color: transparent;
-    border: var(--border-1);
-    padding: 5px;
-    border-radius: var(--border-radius);
-  }
-  .snippet-one{
-    width: 60%;
-    background-color: transparent;
-  }
-  
-  .code-header {
-    width: 100%;
-    display: flex;
-    border-radius: 3px;
-    padding: 5px;
-    justify-content: flex-start;
-    gap: 1rem;
-    align-self: center;
-    border-top: var(--border-1);
-    border-right: var(--border-1);
-    border-left: var(--border-1);
-    font-family: var(--font-family-p);
-    font-weight: 300;
-    font-size: clamp(1.6rem, 1.2cqi, 1.8rem);
-   
-  }
- .code-header-btn{
+.test-snippet-card {
+  width: 100%;
+  height: 100%;
+  padding: 1rem;
+  background-color: transparent;
+}
+.test-snippet-card-body {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  position: relative;
+  margin-left: 1px;
+  padding: 0 20px;
+}
+.snippet-one {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  overflow: hidden;
+  border-radius: 3px;
+  border: var(--border-1);
+}
+
+.code-header {
+  width: 100%;
+  display: flex;
+  border-radius: 3px;
+  padding: 5px;
+  justify-content: flex-start;
+  gap: 1rem;
+  align-self: center;
+  border-bottom: var(--border-1);
+  font-family: var(--font-family-p);
+  font-weight: 300;
+  font-size: clamp(1.6rem, 1.2cqi, 1.8rem);
+}
+.code-header-btn {
   width: 8px;
   height: 8px;
   background-color: var(--bg-secondary);
   border-radius: var(--border-radius-circle);
- }
-  
-  .code-body {
-    padding: 5px;
-    border-radius: 3px;
-    border: var(--border-1);
-    background-color: var(--bg-secondary);
-    font-family: var(--font-family-p);
-    color: var(--font-color-primary);
-  }
-  
+}
+
+.code-body-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 10px 5px;
+  background-color: var(--bg-secondary);
+  font-family: var(--font-family-p);
+  color: var(--font-color-primary);
+  background-color: transparent;
+  position: relative;
+}
+.code-body-1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--ovelay-bg);
+  background-size: 200% 200%;
+  background-position: 50% 50%;
+}
+
+.code-line {
+  font-size: var(--text-normal);
+  word-break: break-all;
+  word-spacing: 2px;
+  line-height: 1rem;
+  display: flex;
+  gap: 2rem;
+}
+.line-1 {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  align-self: center;
+}
+
+.snippet-two {
+  width: 80%;
+  height: 90%;
+  border-top: var(--border-1);
+  border-right: var(--border-1);
+  border-left: var(--border-1);
+  border-radius: var(--border-radius);
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.snippet-two-header {
+  width: 60%;
+  display: flex;
+  border-radius: 3px;
+  padding: 5px;
+  justify-content: space-between;
+  gap: 1rem;
+  align-self: center;
+  font-family: var(--font-family-p);
+  font-weight: 300;
+  font-size: clamp(1.6rem, 1.2cqi, 1.8rem);
+  background: transparent;
+}
+.snippet-two-btns {
+  display: flex;
+  width: 20%;
+  justify-content: space-between;
+}
+.window-blue-btn {
+  background-color: var(--font-color-blue);
+}
+.window-red-btn {
+  background-color: var(--font-color-red);
+}
+.window-green-btn {
+  background-color: var(--font-color-green);
+}
+
+.snippet-two-body {
+  width: 90%;
+  height: 70%;
+  padding: 5px;
+  text-align: center;
+  align-content: center;
+  margin: auto;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.1) 1px,
+    transparent 1px
+  ),
+  linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+background-size: 10px 10px;
+background-position: middle center;
+}
+.snippet-two-body-card {  
+  font-family: var(--font-family-p);
+  color: var(--font-color-primary);
+  font-size: var(--heading-h1);
+  background-color: transparent;
+}
+.snippet-two-body-card h1 {
+  background-color: transparent;
+}

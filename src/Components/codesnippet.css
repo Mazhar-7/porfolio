@@ -22,11 +22,24 @@
 
 .code-snippet-card {
   width: 100%;
+  height: 60vh;
   background-color: transparent;
   border: var(--border-1);
   padding: 5px;
   border-radius: var(--border-radius);
 }
+.code-snippet-card-header{
+
+}
+
+.code-snippet-card-body{
+  /* background-color: aquamarine; */
+  width: 90%;
+  height: 50%;
+  margin: auto;
+  
+}
+
 
 .code-header {
   display: flex;
@@ -49,6 +62,7 @@
 
 .code-body {
   width: 100%;
+  height: 100%;
   padding: 5px;
   border-radius: 3px;
   background-color: transparent;
@@ -58,30 +72,29 @@
   border-bottom: var(--border-1);
   background-color: var(--bg-secondary);
   font-family: var(--font-family-p);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-around;
 }
-
+code{
+  background-color: transparent;
+}
 .code-body pre {
-  background-color: transparent;
-}
-.code-body code {
-    width: 100%;
-    padding: 5px ;
-  background-color: transparent;
+  background-color: transparent;  
+
 }
 .line {
   background-color: transparent;
-  font-family: var(--font-family-p);
-  width: 100px;
-  height: 10px;
-  padding: 2px;
-  margin:  5px;
+  line-height: 1rem;
+  text-align: left;
+  word-wrap: break-word;
+  letter-spacing: .5px;
 }
 .line span{
-    font-size: clamp(.75rem, 1cqi, 1.1rem);
     font-weight: 400;
-    word-wrap: break-word;
-    letter-spacing: 1px;
-    text-align: left;
+    font-size: clamp(.75rem, .75cqi, 1.2rem);
+    
 }
 span {
   background-color: transparent;
