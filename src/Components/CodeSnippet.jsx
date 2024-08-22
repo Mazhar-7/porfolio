@@ -25,7 +25,7 @@ const CodeSnippet = () => {
           </div>
           <div className="code-snippet-card-body">
             <div className="code-header">
-              <i class="fa-brands fa-react"></i>
+              <i className="fa-brands fa-react"></i>
               <h4>app/users/page.jsx</h4>
             </div>
             <div className="code-body">

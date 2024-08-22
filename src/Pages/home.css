@@ -1,7 +1,32 @@
-:root{
-  --font-family-p:  "DM Sans", sans-serif;
+:root {
+  --heading-h1: clamp(2.6rem, 2.2cqi, 2.8rem);
+  --heading-h4: clamp(1.6rem, 2cqi, 2rem);
+  --text-normal: clamp(1.2rem, 1.2cqi, 1.6rem);
+  --border-1: 1px solid rgba(255, 255, 255, 0.1);
+  --border-2: 2px solid rgba(255, 255, 255, 0.1);
+  --border-3: 1px solid var(--yellow-icon);
+  --border-4: 1px solid var(--font-color-blue);
+  --border-5: 1px solid var(--font-color-red);
+  --border-radius: 1rem;
+  --border-radius-circle: 50%;
+  --font-family-p: "DM Sans", sans-serif;
+  --font-weight-h1: 700;
+  --font-weight-h2: 600;
+  --font-weight-h3: 500;
+  --font-weight-h4: 400;
+  --bg-secondary: rgba(255, 255, 255, 0.1);
+  --ovelay-bg: radial-gradient(
+    farthest-corner at 20% 100%,
+    rgba(0, 0, 0, 0.7) 30%,
+    rgba(0, 0, 0, 0) 50%
+  );
+  --font-color-primary: rgba(255, 255, 255, 0.9);
+  --font-color-blue: hsla(210, 100%, 66%, 1);
+  --font-color-red: hsla(358, 100%, 69%, 1);
+  --font-color-green: hsla(174, 90%, 41%, 1);
+  --yellow-icon: #f0db4f;
+  --red-icon: #cc3200;
 }
-
 
 #home {
   width: 100%;
@@ -13,11 +38,11 @@
 }
 
 .home-container {
-  --horizontal:  calc(77 * 1000px/1000);
-  --vertical: calc(65 * 1000px/1000);
+  --horizontal: calc(77 * 999px / 1000);
+  --vertical: calc(65 * 999px / 1000);
   width: 80%;
   height: 100vh;
-  color: #fff;
+  color: var(--font-color-primary);
   position: relative;
   background-image: linear-gradient(
       90deg,
@@ -25,9 +50,10 @@
       transparent 1px
     ),
     linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: var(--horizontal) var(--vertical);
+  background-size: 50px 50px;
   background-position: middle center; 
   overflow: hidden;
+  border: var(--border-1);
 }
 .home-intro {
   width: 50%;
@@ -47,12 +73,6 @@
   font-weight: 400;
   font-size: clamp(4rem, 2.2cqi, 2.6rem);
 }
-.home-intro p {
-  background: transparent;
-  font-weight: 400;
-  font-size: clamp(2rem, 2.2cqi, 2.6rem);
-}
-
 .home-container .blink-line {
   position: absolute;
   width: 1px;

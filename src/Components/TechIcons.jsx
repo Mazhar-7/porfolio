@@ -25,13 +25,13 @@ const TechIcons = () => {
       <div className="techicons-wrapper">
         <div className="icons">
           <div className="react">
-            <i class="fa-brands fa-react"></i>
+            <i className="fa-brands fa-react"></i>
           </div>
           <div className="github">
-            <i class="fa-solid fa-gear"></i>
+            <i className="fa-solid fa-gear"></i>
           </div>
           <div className="javascript">
-            <i class="fa-brands fa-square-js"></i>
+            <i className="fa-brands fa-square-js"></i>
           </div>
         </div>
       </div>

@@ -1,0 +1,58 @@
+const projectsData = [
+  {
+    id: 1,
+    title: "E-commerce Website",
+    technology: "React, Redux, Node.js",
+    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    date: "2020-01-01",
+    email: "purpose.cli@",
+    gtihub: "https://github.com",
+  },
+  {
+    id: 2,
+    title: "Mobile App",
+    technology: "React Native, Firebase",
+    videoUrl: "https://www.youtube.com/watch?v=JNQXAC9IVRw",
+    date: "2020-03-15",
+    email: "purpose.cli@",
+    gtihub: "https://github.com",
+  },
+  {
+    id: 3,
+    title: "Virtual Reality Experience",
+    technology: "Unity, C#",
+    videoUrl: "https://www.youtube.com/watch?v=K7yQ4p5XcQw",
+    date: "2020-06-01",
+    email: "purpose.cli@",
+    gtihub: "https://github.com",
+  },
+  {
+    id: 4,
+    title: "Machine Learning Model",
+    technology: "Python, TensorFlow",
+    videoUrl: "https://www.youtube.com/watch?v=G5p7Q5XcQw",
+    date: "2020-09-01",
+    email: "purpose.cli@",
+    gtihub: "https://github.com",
+  },
+  {
+    id: 5,
+    title: "Web Application",
+    technology: "Angular, Node.js",
+    videoUrl: "https://www.youtube.com/watch?v=L7yQ4p5XcQw",
+    date: "2020-11-15",
+    email: "purpose.cli@",
+    gtihub: "https://github.com",
+  },
+  {
+    id: 6,
+    title: "Game Development",
+    technology: "Unity, C++",
+    videoUrl: "https://www.youtube.com/watch?v=M7yQ4p5XcQw",
+    date: "2020-12-01",
+    email: "purpose.cli@",
+    gtihub: "https://github.com",
+  },
+];
+
+export default projectsData;
