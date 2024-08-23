@@ -1,58 +1,38 @@
+import image1 from './images/image-1.png';
+import image2 from './images/image-2.png';
+import image3 from './images/image-3.png';
+
 const projectsData = [
   {
     id: 1,
-    title: "E-commerce Website",
-    technology: "React, Redux, Node.js",
-    videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    title: "Dashboard",
+    technology: "ReactJs,Tailwindcss",
+    imgUrl: image1,
     date: "2020-01-01",
-    email: "purpose.cli@",
-    gtihub: "https://github.com",
+    email: "purpose.cli@gmail.com",
+    gtihub: "https://github.com/Mazhar-7/Dashboard",
+    live : "https://dashboard-eight-liart.vercel.app/"
   },
   {
     id: 2,
     title: "Mobile App",
-    technology: "React Native, Firebase",
-    videoUrl: "https://www.youtube.com/watch?v=JNQXAC9IVRw",
+    technology: "ReactJs, weather Api",
+    imgUrl: image2,
     date: "2020-03-15",
-    email: "purpose.cli@",
-    gtihub: "https://github.com",
+    email: "purpose.cli@gmail.com",
+    gtihub: "https://github.com/Mazhar-7/Weather-App",
+    live: "https://weather-app-coral-sigma-26.vercel.app/"
   },
   {
     id: 3,
-    title: "Virtual Reality Experience",
-    technology: "Unity, C#",
-    videoUrl: "https://www.youtube.com/watch?v=K7yQ4p5XcQw",
+    title: "Portfolio",
+    technology: "ThreeJs , 3d , ReactJs,Frmaer Motion",
+    imgUrl: image3,
     date: "2020-06-01",
-    email: "purpose.cli@",
-    gtihub: "https://github.com",
-  },
-  {
-    id: 4,
-    title: "Machine Learning Model",
-    technology: "Python, TensorFlow",
-    videoUrl: "https://www.youtube.com/watch?v=G5p7Q5XcQw",
-    date: "2020-09-01",
-    email: "purpose.cli@",
-    gtihub: "https://github.com",
-  },
-  {
-    id: 5,
-    title: "Web Application",
-    technology: "Angular, Node.js",
-    videoUrl: "https://www.youtube.com/watch?v=L7yQ4p5XcQw",
-    date: "2020-11-15",
-    email: "purpose.cli@",
-    gtihub: "https://github.com",
-  },
-  {
-    id: 6,
-    title: "Game Development",
-    technology: "Unity, C++",
-    videoUrl: "https://www.youtube.com/watch?v=M7yQ4p5XcQw",
-    date: "2020-12-01",
-    email: "purpose.cli@",
-    gtihub: "https://github.com",
-  },
+    email: "purpose.cli@com",
+    gtihub: "https://github.com/Mazhar-7/Portfolio-v2",
+    live:  "https://salmann-portfolio.vercel.app/"
+  }
 ];
 
 export default projectsData;

@@ -27,34 +27,29 @@
   --yellow-icon: #f0db4f;
   --red-icon: #cc3200;
 }
-
 #home {
   width: 100%;
   margin: 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .home-container {
-  --horizontal: calc(77 * 999px / 1000);
-  --vertical: calc(65 * 999px / 1000);
   width: 80%;
-  height: 100vh;
+  height: 100dvh;
   color: var(--font-color-primary);
   position: relative;
-  background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0.1) 1px,
-      transparent 1px
-    ),
-    linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
-  background-size: 50px 50px;
-  background-position: middle center; 
   overflow: hidden;
-  border: var(--border-1);
+  border-radius: var(--border-radius);
 }
+.home-container canvas{
+  position: absolute;
+  background-size: cover;
+  background-position: center center;
+  /* border: 1px solid green; */
+}
+
 .home-intro {
   width: 50%;
   position: absolute;
